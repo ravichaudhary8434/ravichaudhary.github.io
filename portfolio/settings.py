@@ -10,12 +10,13 @@ TEMPLATE_DIR =os.path.join(BASE_DIR,'templates')
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = 'cr107qak9(bmxqvm$(!t4&=b-+rii&&58btz3%u+kbx2o)x8os'
+# SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['ravichaudhary.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -32,6 +33,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -74,6 +77,7 @@ DATABASES = {
         'POST': '5432',
     }
 }
+
 
 
 
