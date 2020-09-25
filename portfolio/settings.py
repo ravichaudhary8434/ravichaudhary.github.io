@@ -1,6 +1,7 @@
 
 import os
 import django_heroku
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -15,7 +16,7 @@ SECRET_KEY = 'cr107qak9(bmxqvm$(!t4&=b-+rii&&58btz3%u+kbx2o)x8os'
 # SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['ravichaudhary.herokuapp.com', '127.0.0.1']
 
@@ -86,6 +87,9 @@ DATABASES = {
     }
 }
 
+prod_db  =  dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
+
 
 
 
@@ -124,10 +128,15 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
 MEDIA_URL = '/media/'
