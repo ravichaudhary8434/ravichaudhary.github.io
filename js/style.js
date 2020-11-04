@@ -126,3 +126,21 @@ $(".contact-form")
             );
         }
     });
+
+
+// Script
+
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbzTyuGlZnHR6LeaJvo5RGIpnAfiAa9LKAsaLJ5iKcF4oE1jSt4/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbziV6bXkeCXa2F9K3wc0a4-vqdRthZkrdBf-M9LNFiKAeNwD61F/exec'
+const form = document.forms['submit-to-google-sheet']
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            alert('Your Message has been Succesfully Sent!');
+            document.querySelector('.contact-form').reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+})
+
