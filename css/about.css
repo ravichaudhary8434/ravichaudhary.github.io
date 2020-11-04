@@ -1,0 +1,41 @@
+.about-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.about-container .abt-header {
+    display: none;
+}
+.about-container .row {
+    justify-content: center;
+}
+.abt-box .abt-title {
+    position: relative;
+    right: 23%;
+    background: var(--bg-color1);
+    padding: 10px;
+    padding-left: 5%;
+    text-transform: uppercase;
+    font-family: "Font Awesome 5 Free";
+    width: 110%;
+    margin-left: 20px;
+}
+.about-container .row .abt-box {
+    float: left;
+}
+.about-container .row .abt-box:nth-child(2) {
+    padding: 100px 50px 100px 50px;
+    background: var(--bg-color1);
+}
+.abt-box img {
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
+    margin-top: 7%;
+    margin-left: 10%;
+}
+.abt-box p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+}

@@ -1,0 +1,71 @@
+.explore-area {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.explore-area h4{
+    font-family: 'Libre Baskerville', serif;
+}
+.explore-area .row {
+    justify-content: center;
+}
+.explore-area .explore-card {
+    float: left;
+    border-radius: 4px;
+    position: relative;
+    background: none repeat scroll 0 0 #fff;
+    color: #444444;
+    max-width: 320px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    padding: 0 0 10px 0;
+    transition: 0.3s ease-in-out;
+}
+.explore-area .explore-card .cover {
+    border-radius: 4px 4px 0 0;
+    height: 105px;
+    overflow: hidden;
+    z-index: -2;
+}
+.explore-area .explore-card .cover img {
+    width: 100%;
+}
+.explore-card .branded {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    display: block;
+    height: 120px;
+    margin: -55px auto 0;
+    width: 120px;
+    text-align: center;
+}
+.explore-area .explore-area .explore-card .branded .fa {
+    font-size: 5em;
+    text-align: center;
+    padding: 20px;
+}
+
+.explore-area .explore-card .branded .imgExp {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.explore-area .explore-card .branded hr {
+    border: 0.2px solid black;
+    opacity: 0.5;
+}
+.explore-area .explore-card .content{
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 1px;
+}
+.explore-area .explore-card:hover {
+    transform: scale(1.1);
+}
