@@ -44,6 +44,15 @@ $(document).ready(function () {
     hidePreloader();
 });
 
+
+// Padding to the animation
+const navbar = document.querySelector('.navbar');
+const animatedtext = document.querySelector('.banner-container .circles');
+animatedtext.style.top = `${navbar.offsetHeight}px`;
+window.addEventListener('resize', () => {
+    animatedtext.style.top = `${navbar.offsetHeight}px`;
+});
+
 // Color and offsert of Skill card
 const colors = ['red', 'green', 'yellow', 'white', 'purple', 'orange', 'blue', 'red', 'green', 'yellow', 'white', 'purple', 'orange', 'blue'];
 const percent = [85, 90, 70, 80, 80, 75, 65, 70, 85, 75, 80, 90, 75, 70];
@@ -144,3 +153,16 @@ form.addEventListener('submit', e => {
         .catch(error => console.error('Error!', error.message))
 })
 
+
+// Night Mode
+const background = document.querySelector('.night-mode');
+const div1 = document.createElement('div');
+const div2 = document.createElement('div');
+const div3 = document.createElement('div');
+div1.classList.add('stars');
+div2.classList.add('stars2');
+div3.classList.add('stars3');
+
+background.appendChild(div1);
+background.appendChild(div2);
+background.appendChild(div3);

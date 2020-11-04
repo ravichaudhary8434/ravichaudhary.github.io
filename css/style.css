@@ -363,7 +363,9 @@ footer p a:hover {
       margin-left: 20px;
   }
   .c-box .icon .box1:nth-child(1){
-    margin-bottom: 20px;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 50px;
   }
   .c-box .icon{
     padding: 0;
@@ -425,6 +427,10 @@ footer p a:hover {
   .front-banner .full-name h1 {
       font-size: 3rem;
   }
+  .front-banner .title-animation .title-box span,
+  .front-banner .title-animation .title-box strong {
+      font-size: 0.5em;
+  }
   /* About */
   .about-container {
     padding-bottom: 20px;
@@ -454,6 +460,10 @@ footer p a:hover {
   }
   .contact-form .input-block label {
       font-size: 14px;
+  }
+  /* Project */
+  .project-container .row {
+    margin: 0px;
   }
 }
 
