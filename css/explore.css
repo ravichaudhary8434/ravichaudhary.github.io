@@ -7,6 +7,7 @@
 }
 .explore-area h4{
     font-family: 'Libre Baskerville', serif;
+    color: var(--color2);
 }
 .explore-area .row {
     justify-content: center;
@@ -15,12 +16,14 @@
     float: left;
     border-radius: 4px;
     position: relative;
-    background: none repeat scroll 0 0 #fff;
-    color: #444444;
+    background: var(--color1);
+    color: var(--color2);
     max-width: 320px;
     height: 400px;
     margin: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 5px 5px 0px #fff; */
+    box-shadow: var(--box-shadow);
+    /* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); */
     padding: 0 0 10px 0;
     transition: 0.3s ease-in-out;
 }
@@ -35,7 +38,7 @@
 }
 .explore-card .branded {
     position: relative;
-    background: #fff;
+    background: var(--color1);
     border-radius: 50%;
     display: block;
     height: 120px;
@@ -55,7 +58,7 @@
     height: 100px;
 }
 .explore-area .explore-card .branded hr {
-    border: 0.2px solid black;
+    border: 0.2px solid var(--color2);
     opacity: 0.5;
 }
 .explore-area .explore-card .content{

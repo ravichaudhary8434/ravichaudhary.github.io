@@ -155,14 +155,58 @@ form.addEventListener('submit', e => {
 
 
 // Night Mode
-const background = document.querySelector('.night-mode');
-const div1 = document.createElement('div');
-const div2 = document.createElement('div');
-const div3 = document.createElement('div');
-div1.classList.add('stars');
-div2.classList.add('stars2');
-div3.classList.add('stars3');
+// const background = document.querySelector('.night-mode');
 
-background.appendChild(div1);
-background.appendChild(div2);
-background.appendChild(div3);
+
+
+// Button
+const background = document.querySelectorAll('.night');
+
+background.forEach(bg => {
+    const div1 = document.createElement('div');
+    const div2 = document.createElement('div');
+    const div3 = document.createElement('div');
+    div1.classList.add('stars');
+    div2.classList.add('stars2');
+    div3.classList.add('stars3');
+    
+    bg.appendChild(div1);
+    bg.appendChild(div2);
+    bg.appendChild(div3);
+})
+
+const root = document.documentElement;
+const body = document.querySelector('body');
+const nightButton = document.querySelector('#toggle-box-checkbox');
+
+
+function nightMode() {
+    const frontAnimation = document.querySelector('.circles');
+    if(nightButton.checked){
+        background.forEach(bg => {
+            bg.style.display = 'initial';
+        })
+        body.style.setProperty('background', 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)');
+        root.style.setProperty('--bg-color1', 'transparent');
+        root.style.setProperty('--bg-color2', '#00296b');
+        root.style.setProperty('--color2', '#fff');
+        root.style.setProperty('--color1', 'transparent');
+        root.style.setProperty('--box-shadow', '0 0 25px rgba(0, 0, 0, 0.9)');
+        frontAnimation.style.display = 'none';
+        document.querySelector('footer').style.background = '#00296b';
+    }else{
+        background.forEach(bg => {
+            bg.style.display = 'none';
+        });
+        body.style.setProperty('background', '#fff');
+        root.style.setProperty('--bg-color1', 'linear-gradient(to right, #96c93d, #00b09b)');
+        root.style.setProperty('--bg-color2', '#ff9f1c');
+        root.style.setProperty('--color2', '#000000');
+        root.style.setProperty('--color1', '#fff');
+        root.style.setProperty('--box-shadow', '5px 5px 25px rgba(0, 0, 0, 0.2)');
+        frontAnimation.style.display = 'initial';
+        document.querySelector('footer').style.background = 'var(--bg-color1)';
+    }
+}
+
+nightButton.addEventListener('change',nightMode);

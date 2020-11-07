@@ -20,6 +20,7 @@
     font-family: "Font Awesome 5 Free";
     width: 110%;
     margin-left: 20px;
+    color: var(--color2);
 }
 .about-container .row .abt-box {
     float: left;
@@ -27,6 +28,7 @@
 .about-container .row .abt-box:nth-child(2) {
     padding: 100px 50px 100px 50px;
     background: var(--bg-color1);
+    color: var(--color2);
 }
 .abt-box img {
     object-fit: cover;

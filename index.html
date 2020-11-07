@@ -41,8 +41,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>Ravi Chaudhary</title>
 </head>
-
 <body>
+    <!-- Div for night mode -->
+    <div class="night"></div>
     <!-- ----------------- Start of NavBar ------------------->
     <nav class="navbar smart-scroll navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -53,7 +54,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a id="about-link" class="nav-link" href="#about">About</a>
                     </li>
@@ -67,6 +68,11 @@
                         <a class="nav-link" href="#workexperience">Experience</a>
                     </li>
                 </ul>
+                <div class="toggle-box" style="margin-top: 10px;">
+                    <input type="checkbox" name="checkbox1" id="toggle-box-checkbox" />
+                    <label for="toggle-box-checkbox" class="toggle-box-label-left"></label>
+                    <label for="toggle-box-checkbox" class="toggle-box-label"></label>
+                </div>
             </div>
         </div>
     </nav>
@@ -157,7 +163,8 @@
         </div>
     </div>
     <!--  ========================= End About Area ==========================  -->
-
+    <!-- Div for night mode -->
+    <div class="night"></div>
     <!-- Skill Area -->
     <div class="skill-container">
         <div id="skill1" class="skill-box">
@@ -455,7 +462,8 @@
         </div>
     </div>
     <!-- End of Explore -->
-
+    <!-- Div for night mode -->
+    <div class="night"></div>
     <!-- Work Experience -->
     <div id="workexperience" class="work-container">
         <div class="container">
@@ -508,9 +516,11 @@
                 <div class="detail">
                     <h2>Admission Forum Website</h2>
                     <div class="summary">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat earum quia modi magni
-                            consequatur autem consectetur! Ex eligendi fugiat nihil veniam quia nulla nam excepturi quo
-                            quaerat, atque, mollitia commodi?</p>
+                        <p>
+                            It's my First Ever Freelancing Web Dev Project. 
+                            I've created this website for the company "Admission Forum".
+                            I've used HTML, CSS and JavaScript for creating the Web Page and used Google AppScript to connect the HTML Form with Google Spreadsheet.
+                        </p>
                     </div>
                     <div class="bottom">
                         <p class="p-box">Platform: <strong>VS Code</strong></p>
@@ -545,9 +555,9 @@
                 <div class="detail">
                     <h2>Tic Tac Toe</h2>
                     <div class="summary">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat earum quia modi magni
-                            consequatur autem consectetur! Ex eligendi fugiat nihil veniam quia nulla nam excepturi quo
-                            quaerat, atque, mollitia commodi?</p>
+                        <p>
+                            I've created a Tic Tac Toe Game using HTML, CSS and JavaScript to Enhance my JavaScript Skills.
+                        </p>
                     </div>
                     <div class="bottom">
                         <p class="p-box">Platform: <strong>VS Code</strong></p>
@@ -559,7 +569,9 @@
         </div>
     </div>
     <!--  ======================= End Project Area =============================  -->
-
+    
+    <!-- Div for night mode -->
+    <div class="night"></div>
     <!-- Start of Blog Area -->
 
     <div class="blog-container">
@@ -645,7 +657,9 @@
         </div>
     </div>
     <!-- End of Coding Area -->
-
+    
+    <!-- Night Mode -->
+    <div class="night"></div>
     <!-- Start of Contact -->
     <div id="contact" class="contact-container">
         <div class="contact-title divider">
@@ -749,6 +763,9 @@
     </div>
     <!-- <div class="night-mode"></div> -->
     <!-- End of Contact -->
+
+    <!-- Night Mode Button -->
+    <!-- <button class="night-mode-btn"><i class="fa fa-light-switch"></i> Night Mode</button> -->
 
     <!-- Footer -->
     <footer class="mainfooter">

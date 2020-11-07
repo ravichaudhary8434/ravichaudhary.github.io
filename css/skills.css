@@ -24,6 +24,7 @@
 .skill-box .row .card {
     position: relative;
     width: 200px;
+    /* background: var(--bg-color2); */
     background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
     /* display: flex; */
     justify-content: center;

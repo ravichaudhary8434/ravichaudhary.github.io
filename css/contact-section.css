@@ -22,7 +22,8 @@
 }
 .contact-container .row .form {
     padding: 20px;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.9); */
 }
 .c-box .overlay {
     height: 80px;
@@ -46,9 +47,11 @@
 }
 .c-box .icon .box1 h4 {
     font-family: "Font Awesome 5 Free";
+    color: var(--color2);
 }
 .c-box .icon .box1 p {
     font-weight: 500;
+    color: var(--color2);
 }
 .c-box .icon .box1:nth-child(1){
     height: 100px;
