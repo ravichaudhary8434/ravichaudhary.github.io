@@ -44,10 +44,6 @@ body {
 .navbar-nav .nav-item {
     font-size: 1.5em;
 }
-/* .fixed-nav.navbar {
-  position: fixed;
-  top: 0;
-} */
 .scrolled-down{
   position: fixed;
   top: 0;
