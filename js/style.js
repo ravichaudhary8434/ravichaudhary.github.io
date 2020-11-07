@@ -15,19 +15,18 @@ $(window).load(function () {
 
 // Navbar scroll
 
-// add padding top to show content behind navbar
-$('body').css('padding-top', $('.navbar').outerHeight() + 'px');
-
 // detect scroll top or down
-if ($('.smart-scroll').length > 0) { // check if element exists
+if ($('.navbar').length > 0) { // check if element exists
     var last_scroll_top = 0;
     $(window).on('scroll', function () {
+        // add padding top to show content behind navbar
+        $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
         scroll_top = $(this).scrollTop();
         if (scroll_top < last_scroll_top) {
-            $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+            $('.navbar').removeClass('scrolled-down').addClass('scrolled-up');
         }
         else {
-            $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+            $('.navbar').removeClass('scrolled-up').addClass('scrolled-down');
         }
         last_scroll_top = scroll_top;
     });
@@ -169,7 +168,7 @@ background.forEach(bg => {
     div1.classList.add('stars');
     div2.classList.add('stars2');
     div3.classList.add('stars3');
-    
+
     bg.appendChild(div1);
     bg.appendChild(div2);
     bg.appendChild(div3);
@@ -182,7 +181,7 @@ const nightButton = document.querySelector('#toggle-box-checkbox');
 
 function nightMode() {
     const frontAnimation = document.querySelector('.circles');
-    if(nightButton.checked){
+    if (nightButton.checked) {
         background.forEach(bg => {
             bg.style.display = 'initial';
         })
@@ -194,7 +193,7 @@ function nightMode() {
         root.style.setProperty('--box-shadow', '0 0 25px rgba(0, 0, 0, 0.9)');
         frontAnimation.style.display = 'none';
         document.querySelector('footer').style.background = '#00296b';
-    }else{
+    } else {
         background.forEach(bg => {
             bg.style.display = 'none';
         });
@@ -209,4 +208,16 @@ function nightMode() {
     }
 }
 
-nightButton.addEventListener('change',nightMode);
+nightButton.addEventListener('change', nightMode);
+
+// // Coding Ranks
+// const url = 'https://competitive-coding-api.herokuapp.com/api/codechef/malhotrravi842'
+// fetch(url)
+//     .then(function (data) {
+//         // Here you get the data to modify as you please
+//         console.log(data);
+//     })
+//     .catch(function (error) {
+//     // If there is any error you will catch them here
+//     console.log(error);
+// });
