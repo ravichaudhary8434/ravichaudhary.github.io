@@ -187,12 +187,14 @@ function nightMode() {
         })
         body.style.setProperty('background', 'radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)');
         root.style.setProperty('--bg-color1', 'transparent');
-        root.style.setProperty('--bg-color2', '#00296b');
+        root.style.setProperty('--bg-color2', '#0f3460');
+        root.style.setProperty('--bg-color4', '#fff');
+        root.style.setProperty('--bg-color5', '#0f3460');
         root.style.setProperty('--color2', '#fff');
         root.style.setProperty('--color1', 'transparent');
         root.style.setProperty('--box-shadow', '0 0 25px rgba(0, 0, 0, 0.9)');
         frontAnimation.style.display = 'none';
-        document.querySelector('footer').style.background = '#00296b';
+        document.querySelector('footer').style.background = '#0f3460';
     } else {
         background.forEach(bg => {
             bg.style.display = 'none';
@@ -202,6 +204,7 @@ function nightMode() {
         root.style.setProperty('--bg-color2', '#ff9f1c');
         root.style.setProperty('--color2', '#000000');
         root.style.setProperty('--color1', '#fff');
+        root.style.setProperty('--bg-color4', '#ff9f1c');
         root.style.setProperty('--box-shadow', '5px 5px 25px rgba(0, 0, 0, 0.2)');
         frontAnimation.style.display = 'initial';
         document.querySelector('footer').style.background = 'var(--bg-color1)';

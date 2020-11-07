@@ -7,6 +7,8 @@
     --bg-color1: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     --bg-color2: #ff9f1c;
     --bg-color3: #96c93d;
+    --bg-color4: #ff9f1c;
+    --bg-color5: #324454;
     --color1: #fff;
     --color2: #000000;
     --box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
@@ -164,7 +166,6 @@ footer {
   color: var(--color2);
 }
 footer p {
-  padding-top: 20px;
   text-align: center;
 }
 footer p a {
@@ -314,7 +315,7 @@ footer p a:hover {
     display: none;
   }
   .about-container .row .abt-box:nth-child(2) {
-    background: #fff;
+    background: var(--color1);
     padding: 20px;
     text-align: center;
   }
