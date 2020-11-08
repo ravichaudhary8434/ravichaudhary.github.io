@@ -244,6 +244,10 @@ footer p a:hover {
   .c-box .icon .box1 p {
     font-size: 0.9em;
   }
+  .abt-box .download-cv {
+    font-size: 1em;
+    padding: 2px;
+  }
 }
 @media (max-width: 768px) and (min-width: 577px) {
   .banner-container {
@@ -269,6 +273,11 @@ footer p a:hover {
   .abt-box img {
     width: 100%;
     margin-left: -5%;
+  }
+  .abt-box .download-cv {
+    font-size: 0.8em;
+    padding: 2px;
+    width: 40%;
   }
   /* Background Animation */
   .banner-container .circles {
