@@ -212,15 +212,3 @@ function nightMode() {
 }
 
 nightButton.addEventListener('change', nightMode);
-
-// // Coding Ranks
-// const url = 'https://competitive-coding-api.herokuapp.com/api/codechef/malhotrravi842'
-// fetch(url)
-//     .then(function (data) {
-//         // Here you get the data to modify as you please
-//         console.log(data);
-//     })
-//     .catch(function (error) {
-//     // If there is any error you will catch them here
-//     console.log(error);
-// });
