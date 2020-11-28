@@ -14,6 +14,7 @@ fetch(url)
 
 // Leetcode
 url = `https://competitive-coding-api.herokuapp.com/api/${codingCard[1].dataset.platform}/${codingCard[1].dataset.username}`
+console.log(url);
 fetch(url)
     .then(data => data.json())
     .then(json => {
