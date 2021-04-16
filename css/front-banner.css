@@ -123,6 +123,10 @@
     margin: 0 5px;
 }
 
+.social-network .icoGFG .gfg {
+    width: 35px;
+    height: 35px;
+}
 
 .social-network .icoEmail:hover {
     background-color: #EEEEEE;
@@ -142,6 +146,13 @@
     background-color: #16222A;
 }
 
+/* .social-network .icoGFG:hover {
+    background-color: #43a047;
+} */
+
+.social-network .icoGFG:hover .gfg path {
+    fill: #43a047;
+}
 
 .social-network .icoEmail:hover i{
     color: #D44638;
@@ -178,6 +189,7 @@
     text-align: center;
 }
 
+.social-network .icoGFG:hover .gfg,
 .social-circle li a:hover i,
 .triggeredHover {
     -moz-transform: rotate(360deg);
@@ -191,6 +203,7 @@
     transition: all 0.2s;
 }
 
+.icoGFG .gfg,
 .social-circle i {
     color: #595959;
     -webkit-transition: all 0.8s;
@@ -203,7 +216,6 @@
 .social-network a {
     background-color: #F9F9F9;
 }
-
 /* Background Animation */
 
 .banner-container .circles {
