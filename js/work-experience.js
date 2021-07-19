@@ -1,5 +1,5 @@
 EXPERIENCE_DATA = [
-    {'title': 'Web Developer Intern', 'date': 'May 2021 - Present', 'employer': 'Binding Bharat', 'summary': 'Developing, optimizing and maintaining the websites and applications utilizing HTML, CSS, JavaScript, jQuery and various APIs to meet my clients needs and goals.'},
+    {'title': 'Web Developer Intern', 'date': 'May 2021 - Present', 'employer': 'Binding Bharat', 'summary': '<li>Worked with HTML, CSS, JavaScript and PHP.</li> <li>Customized the Front-end of the homepage and Blog Section.</li> <li>Configured SSL in the website for better security and customer privacy.</li>'},
     {'title': 'Campus SuperHero', 'date': 'May 2022 - Present', 'employer': 'Coding Blocks', 'summary': `<li>Representative of placement cell of BCE Bhagalpur.</li> <li>Promoting Coding Blocks courses, events & bootcamps on social media & oncampus.</li> <li>Conducting various workshops, webinars & online hackathons in college campus.</li> <li>Managed Several Programming contests on HackerBlocks.</li> <li>Recieved Certificate of Appreciation from Coding Blocks for organizing various online workshops in the month of AUG 2020.</li>`},
 ]
 

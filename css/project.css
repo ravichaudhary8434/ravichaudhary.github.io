@@ -15,8 +15,6 @@
     max-width: 400px;
     height: 500px;
     box-shadow: var(--box-shadow);
-    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); */
-    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); */
     border-radius: 5px;
     background: var(--color1);
     color: var(--color2);
